@@ -1,7 +1,5 @@
 export default function Title() {
-    return(
-        <div>
-            <p>Hello world!</p>
-        </div>
+    return (
+        <h1 className="title">Weather Dashboard</h1>
     )
 }
