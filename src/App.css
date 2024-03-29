@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 80vh;
     margin: 0;
 }
 
@@ -22,4 +22,27 @@ body {
 
 .searchbar-input {
     width: 100%;
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-conditions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.display-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+.display-conditions-container2 {
+    display: inline-block;
+    white-space: nowrap;
 }

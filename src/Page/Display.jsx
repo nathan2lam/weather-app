@@ -7,9 +7,9 @@ export default function Display() {
             <div className="display-conditions-container">
                 <h1 className="display-temp">{data.temp}</h1>
                 <div className="display-conditions-container2">
-                    <p>{data.windSpeed}</p>
-                    <p>{data.rainChance}</p>
-                    <p>{data.humidity}</p>
+                    <p className="display-wind">{data.windSpeed}</p>
+                    <p className="display-rain">{data.rainChance}</p>
+                    <p className="display-humidity">{data.humidity}</p>
                 </div>
             </div>
         </div>

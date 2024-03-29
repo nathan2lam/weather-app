@@ -1,7 +1,7 @@
 {
     "city": "Wichita",
     "condition": "Sunny",
-    "temp": "60 degrees",
+    "temp": "60 deg",
     "windSpeed": "15 mph",
     "rainChance": "0%",
     "humidity": "0"
