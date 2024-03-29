@@ -1,11 +1,14 @@
 import React, { useState } from "react"
 
-export default function Searchbar() {
+const Searchbar = ({ onSearch }) => {
     const [city, setCity] = useState("");
 
+    const handleChange = (e) => {
+        setCity(e.target.value)
+    }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setCity(e.target.elements.city.value)
+        onSearch(city)
     }
 
     return (
@@ -13,11 +16,12 @@ export default function Searchbar() {
             <span className="searchbar-label">Enter a city</ span>
             <form 
             className="searchbar-input-container"
-            onSubmit={handleSubmit}>
+            onSubmit={handleSubmit}
+            >
                 <input type="text"
                 className="searchbar-input"
-                name="city"
-                id="city"
+                value={city}
+                onChange={handleChange}
                 />
                 <button
                 type="submit"
@@ -27,4 +31,6 @@ export default function Searchbar() {
             </form>
         </div>
     )
-}
+};
+
+export default Searchbar;

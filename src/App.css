@@ -4,10 +4,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 75vh;
     margin: 0;
 }
 
+.title {
+    font-size: 3.125rem;
+}
 .searchbar-container {
     display: grid;
     grid-template-rows: auto auto;
