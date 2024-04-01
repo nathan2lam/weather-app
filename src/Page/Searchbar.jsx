@@ -13,7 +13,7 @@ const Searchbar = ({ onSearch }) => {
 
     return (
         <div className="searchbar-container">
-            <span className="searchbar-label">Enter a city</ span>
+            <span className="searchbar-label">Enter a city:</ span>
             <form 
             className="searchbar-input-container"
             onSubmit={handleSubmit}
@@ -25,8 +25,10 @@ const Searchbar = ({ onSearch }) => {
                 />
                 <button
                 type="submit"
-                className="searchbar-btn">
-                    Submit
+                className="searchbar-btn"
+                >
+                    <img src="./img/magnifying-glass.png" 
+                    className="searchbar-btn-img" />
                 </button>
             </form>
         </div>

@@ -13,15 +13,15 @@ const Page = () => {
         try {
           const response = await fetch(`${API_URL}&q=${city}`);
           if(!response.ok) {
-            setWeatherData("That city does not exist!");
+            setWeatherData(null)
             throw new Error("Invalid input")
           }
           const data = await response.json();
           setWeatherData(data);
           console.log(data);
         } catch (error) {
-          console.error('Error fetching weather data:', error);
           setWeatherData(null);
+          console.error('Error fetching weather data:', error);
         }
     };
     
