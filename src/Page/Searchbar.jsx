@@ -28,7 +28,8 @@ const Searchbar = ({ onSearch }) => {
                 className="searchbar-btn"
                 >
                     <img src="./img/magnifying-glass.png" 
-                    className="searchbar-btn-img" />
+                    className="searchbar-btn-img" 
+                    alt="search" />
                 </button>
             </form>
         </div>

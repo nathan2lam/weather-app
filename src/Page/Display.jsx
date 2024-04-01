@@ -43,19 +43,19 @@ export default function Display({ weatherData }) {
                 </div>
                 <div className="display-conditions-container2">
                     <div className="display-data-container">
-                        <img src="./img/wind.png" className="display-conditions-img" alt="condition" />
+                        <img src="./img/wind.png" className="display-conditions-img" alt="wind" />
                         <p className="display-wind">{`${weatherData.wind.speed} mph`}</p>
                     </div>
                     <div className="display-data-container">
-                        <img src="./img/drop.png" className="display-conditions-img" alt="condition" />
+                        <img src="./img/drop.png" className="display-conditions-img" alt="humidity" />
                         <p className="display-humidity">{`${weatherData.main.humidity}%`}</p>
                         </div>
                     <div className="display-data-container">
-                        <img src="./img/high.png" className="display-conditions-img" alt="condition" />
+                        <img src="./img/high.png" className="display-conditions-img" alt="high" />
                         <p className="display-max">{`${weatherData.main.temp_max}°`}</p>
                     </div>
                     <div className="display-data-container">
-                        <img src="./img/low.png" className="display-conditions-img" alt="condition" />
+                        <img src="./img/low.png" className="display-conditions-img" alt="low" />
                         <p className="display-min">{`${weatherData.main.temp_min}°`}</p>
                     </div>
                 </div>
