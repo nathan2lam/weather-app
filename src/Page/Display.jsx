@@ -28,6 +28,9 @@ export default function Display({ weatherData }) {
             condition = "hazy";
             src = "hazy";
             break;
+        case "Smoke":
+            condition = "smoky";
+            src = "smoky";
         default:
             break;
     }
