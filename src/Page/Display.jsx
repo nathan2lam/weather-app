@@ -31,6 +31,7 @@ export default function Display({ weatherData }) {
         case "Smoke":
             condition = "smoky";
             src = "smoky";
+            break;
         default:
             break;
     }
